@@ -37,7 +37,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({exercise, index}) => {
             </div>
 
             <div className="flex flex-col bg-slate-950 rounded gap-2 p-2">
-                {exercise.description.split('___').map((val) => {
+                {exercise.description.split('___').map((val: string) => {
                     return (
                         <div className="text-sm">{val}</div>
                     )
@@ -49,7 +49,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({exercise, index}) => {
                     return (
                         <div key={info} className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-900 w-full">
                             <h3 className='capitalize text-slate-400 text-sm'>{info === 'reps' ? `${exercise.unit}` : `${info}`}</h3>
-                            <p className="font-medium">{exercise[info]}</p>
+                            <p className="font-medium">{exercise[info as keyof typeof exercise]}</p>
                         </div>
                     )
                 })}
