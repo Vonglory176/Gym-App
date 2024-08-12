@@ -47,4 +47,4 @@ function App() {
 export default App
 
 
-// VIDEO ---> https://youtu.be/82PXenL4MGg?t=7710
+// VIDEO ---> https://youtu.be/82PXenL4MGg?t=11286
