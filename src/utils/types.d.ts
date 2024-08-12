@@ -16,17 +16,17 @@ export interface ExerciseCardProps {
 }
 
 export interface ExerciseProps {
-    name: string
-    muscles: string[]
-    type: string
+    name: any
+    muscles: any[]
+    type: any
     meta: {
-        environment: string
+        environment: any
         level: number[]
-        equipment: string[]
+        equipment: any[]
     }
-    unit: string
-    description: string
-    substitutes: string[]
+    unit: any
+    description: any
+    substitutes: any[]
 }
   
 export interface WorkoutProps {
