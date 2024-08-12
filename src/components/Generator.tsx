@@ -147,7 +147,7 @@ const Generator: React.FC<GeneratorProps> = ({ poison, setPoison, muscles, setMu
 
 
       {/* Formulate */}
-      <Button func={updateWorkout} text={'Accept & Begin'} />
+      <Button func={updateWorkout} text={'Create workout'} />
       
     </SectionWrapper>
   )
