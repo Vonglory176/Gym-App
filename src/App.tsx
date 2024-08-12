@@ -5,9 +5,10 @@ import Hero from './components/Hero'
 import Generator from './components/Generator'
 import Workout from './components/Workout'
 import { generateWorkout } from './utils/functions'
+import { ExerciseProps } from './utils/types'
 
 function App() {
-  const [currentWorkout, setCurrentWorkout] = useState<string>("")
+  const [currentWorkout, setCurrentWorkout] = useState<ExerciseProps[]>([])
   const [poison, setPoison] = useState<string>("individual")
   const [muscles, setMuscles] = useState<string[]>([])
   const [goal, setGoal] = useState<string>("strength_power")
@@ -38,7 +39,7 @@ function App() {
         updateWorkout={updateWorkout}
       /> {/* children="" */}
 
-      {currentWorkout && <Workout workout={currentWorkout} />}
+      {currentWorkout.length > 0 && <Workout workout={currentWorkout} />}
     </main>
   )
 }
