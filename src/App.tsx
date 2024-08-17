@@ -40,6 +40,10 @@ function App() {
       /> {/* children="" */}
 
       {currentWorkout.length > 0 && <Workout workout={currentWorkout} />}
+
+      <footer className='flex justify-center items-center bg-slate-950 p-2'>
+        <p>Skyler 2024</p>
+      </footer>
     </main>
   )
 }
